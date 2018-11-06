@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Alsina";
+    src: url("./alsina.TTF") format("truetype");
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+:root {
+    --bg-primary: #136512;
+    --bg-selected: #25af1f;
+    --bg-secondary: #52e44e;
+    --fg-primary: #dadeda;
+    --fg-secondary: #93999a;
+    --fg-dark: #000000;
+}
+
+
+body {
+    margin: 0px;
+    font-family: Arial, san-serif;
+    background: var(--bg-secondary);
+
+}
+
+ul, ol {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+header > h1{
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    font-family: alsina;
+}
+
+header, nav {
+    background: var(--bg-primary);
+    color: var(--fg-primary);
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 210px);
+    margin: 0px 10px 0px 10px;
+}
+
+footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background: var(--bg-primary);
+    color: var(--fg-primary);
+}
+
+.list-item {
+    border-bottom: 1px solid black;
+    padding: 30px 15px;
+}
+
+.list-item:last-child {
+    border-bottom: 0;
+}
+
+.navbar {
+    margin: 15px 0px;
+    flex-grow: 1;
+}
+
+.navbar-item {
+    display: inline;
+    text-decoration: none;
+    padding: 15px;
+    color: var(--fg-primary);
+}
+
+.navbar-item:hover {
+    background: var(--bg-selected);
+    color: var(--fg-dark);
+}
+
+.login-container {
+    border: 3px solid var(--bg-primary);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px auto 0px auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item {
+    margin: 0px auto 0px auto;
+}
