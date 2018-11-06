@@ -4,20 +4,28 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./site.css">
-        <title>LOREM IPSUM DOLOR SIT AMET</title>
+        <title>Heróis — Ben 10 Fan Club</title>
     </head>
     <body>
         <header>
-            <img src="./banner.png">
+            <img class="banner" src="./banner.png" alt="Heróis — Ben 10 FC">
         </header>
         <nav>
             <div class="navbar">
-                <a class="navbar-item" href="./index.html">Início</a>
-                <a class="navbar-item" href="#">Início</a>
-                <a class="navbar-item" href="#">Início</a>
-                <a class="navbar-item" href="#">Início</a>
-                <a class="navbar-item" href="#">Início</a>
-                <a class="navbar-item" href="#">Início</a>
+                <a class="navbar-item" href="./index.php">Início</a>
+                <a class="navbar-item" href="./login.php">Entrar</a>
+                <a class="navbar-item" href="./herois_gen1.php">Heróis da Geração 1</a>
+                <a class="navbar-item" href="./herois_gen2.php">Heróis da Geração 2</a>
+                <a class="navbar-item" href="./herois_gen3.php">Heróis da Geração 3</a>
             </div>
+            <?php /*
+            <?php if (isset($_SESSION["user"])): ?>
+                <div class="logged-in-box">
+                    Logado como <?php echo $_SESSION["user"] ?>
+                </div>
+                <form>
+                </form>
+            <?php endif; ?>
+            */ ?>
         </nav>
         <main>
