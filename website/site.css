@@ -73,6 +73,7 @@ article {
     margin: 1vh 0px 1vh 0px;
     padding: 0px 15px;
     padding-bottom: 15px;
+    color: var(--fg-dark);
 }
 
 article:first-child {
