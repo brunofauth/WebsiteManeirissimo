@@ -1,4 +1,4 @@
-<?php require "page_top.html"; ?>
+<?php require "page_top.php"; ?>
 
 <?php session_start(); ?>
 <?php session_regenerate_id(); ?>
@@ -8,4 +8,4 @@
     print_r($_SESSION);
 */ ?>
 
-<?php require "page_bottom.html"; ?>
+<?php require "page_bottom.php"; ?>
