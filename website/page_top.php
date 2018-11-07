@@ -1,5 +1,7 @@
 <!doctype html>
 
+<?php session_start(); ?>
+
 <html lang="pt-BR">
     <head>
         <meta charset="utf-8">
@@ -13,19 +15,19 @@
         <nav>
             <div class="navbar">
                 <a class="navbar-item" href="./index.php">Início</a>
-                <a class="navbar-item" href="./login.php">Entrar</a>
                 <a class="navbar-item" href="./herois_gen1.php">Heróis da Geração 1</a>
                 <a class="navbar-item" href="./herois_gen2.php">Heróis da Geração 2</a>
                 <a class="navbar-item" href="./herois_gen3.php">Heróis da Geração 3</a>
+                <?php if (isset($_SESSION["user"])): ?>
+                    <a class="navbar-item" href="./deauth.php">Sair</a>
+                <?php else: ?>
+                    <a class="navbar-item" href="./login.php">Entrar</a>
+                <?php endif; ?>
             </div>
-            <?php /*
             <?php if (isset($_SESSION["user"])): ?>
                 <div class="logged-in-box">
                     Logado como <?php echo $_SESSION["user"] ?>
                 </div>
-                <form>
-                </form>
             <?php endif; ?>
-            */ ?>
         </nav>
         <main>
