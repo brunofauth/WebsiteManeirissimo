@@ -140,3 +140,7 @@ footer {
 .footer-item {
     margin: 0px auto 0px auto;
 }
+
+.link {
+    text-decoration: none;
+}

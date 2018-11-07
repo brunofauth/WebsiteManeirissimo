@@ -3,9 +3,8 @@
 <?php session_start(); ?>
 <?php session_regenerate_id(); ?>
 
-<?php /*
-    session_start();
-    print_r($_SESSION);
-*/ ?>
+<article class="container-border">
+    <?php require "./articles/bem_vindo.html"; ?>
+</article>
 
 <?php require "page_bottom.php"; ?>

@@ -14,7 +14,7 @@
         <?php require "./articles/massa_cinzenta.html"; ?>
     </article>
 <?php else: ?>
-    <h1>Precisas entrar (autenticar-te) antes de usar essa página.</h1>
+    <?php require "./articles/error_not_logged_in.html"; ?>
 <?php endif; ?>
 
 <?php require "page_bottom.php"; ?>
