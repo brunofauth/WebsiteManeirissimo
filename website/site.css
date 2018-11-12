@@ -38,11 +38,9 @@ header {
     border: 0px;
 }
 
-header > h1{
+h2 {
     text-align: center;
-    margin: 0px;
-    padding: 5px;
-    font-family: alsina;
+    color: #FF0000;
 }
 
 header, nav {
@@ -125,16 +123,27 @@ footer {
 .container-border {
     border: 3px solid var(--bg-primary);
     border-radius: 10px;
+    background: var(--bg-primary);
+    color: var(--fg-primary);
 }
 
 .login-container {
-    border: 3px solid var(--bg-primary);
-    border-radius: 10px;
     padding: 5px;
     margin: 0px auto 0px auto;
-    width: 40%;
+    width: 40vw;
     display: flex;
     flex-direction: column;
+}
+
+.login-container > label {
+    margin: 5px;
+}
+
+input, button[type=submit] {
+    margin: 5px;
+    padding: 10px;
+    background: var(--bg-secondary);
+    border-radius: 3px;
 }
 
 .footer-item {
