@@ -8,3 +8,4 @@
 </article>
 
 <?php require "page_bottom.php"; ?>
+
